@@ -145,6 +145,10 @@ for (const skillName in modifiedSkillAmounts) {
       "skillAmountsArray",
       JSON.stringify(skillAmountsArray)
     );
+    localStorage.setItem(
+      "xpGraphInfo",
+      JSON.stringify(xpGraphInfo)
+    );
     console.log("xpgraphinfo", xpGraphInfo);
 
     // Display data in the corresponding elements
