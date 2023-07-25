@@ -170,7 +170,7 @@ function logout() {
   // Delete the JWT token from local storage
   localStorage.removeItem("jwtToken");
   // Redirect the user to the login page
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
 // Add event listener to the logout button
