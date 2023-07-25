@@ -44,9 +44,17 @@ const radarChartDiv = document.getElementById('radarCanvas');
           },
         ],
       },
-      options: {
+options: {
         scales: {
           r:{
+            ticks: {
+              value: 5,
+              stepSize: 15,
+              display: true,
+              padding: 10,
+              color: "#0f0",
+              showLabelBackdrop: false,
+            },
             angleLines:{
               color: "#007200",
             },
@@ -56,14 +64,6 @@ const radarChartDiv = document.getElementById('radarCanvas');
             pointLabels:{
               color: "#0f0",
             },
-          },
-        },
-        scale: {
-          ticks: {
-            min: 0, // suggestedMin: 0,
-            max: 50, //suggestedMax: 50
-            stepSize: 25,
-            color: "#0f0",
           },
         },
         responsive: true,
